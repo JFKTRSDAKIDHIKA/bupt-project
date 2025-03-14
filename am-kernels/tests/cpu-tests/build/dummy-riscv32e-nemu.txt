@@ -1,0 +1,31 @@
+
+/root/BUPT_PROJECT/bupt-project/am-kernels/tests/cpu-tests/build/dummy-riscv32e-nemu.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80000000 <_start>:
+80000000:	00000413          	li	s0,0
+80000004:	00009117          	auipc	sp,0x9
+80000008:	ffc10113          	addi	sp,sp,-4 # 80009000 <_end>
+8000000c:	00c000ef          	jal	ra,80000018 <_trm_init>
+
+80000010 <main>:
+80000010:	00000513          	li	a0,0
+80000014:	00008067          	ret
+
+80000018 <_trm_init>:
+80000018:	ff410113          	addi	sp,sp,-12
+8000001c:	00000517          	auipc	a0,0x0
+80000020:	01c50513          	addi	a0,a0,28 # 80000038 <mainargs>
+80000024:	00112423          	sw	ra,8(sp)
+80000028:	fe9ff0ef          	jal	ra,80000010 <main>
+8000002c:	00050513          	mv	a0,a0
+80000030:	00100073          	ebreak
+80000034:	0000006f          	j	80000034 <_trm_init+0x1c>
+
+80000038 <mainargs>:
+80000038:	20656854 65736e69 612d7472 72206772     The insert-arg r
+80000048:	20656c75 4d206e69 66656b61 20656c69     ule in Makefile 
+80000058:	6c6c6977 736e6920 20747265 6e69616d     will insert main
+80000068:	73677261 72656820 00002e65 00000000     args here.......

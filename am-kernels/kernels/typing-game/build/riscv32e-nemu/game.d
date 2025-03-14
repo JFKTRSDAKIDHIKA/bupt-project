@@ -1,7 +1,0 @@
-/root/ysyx-workbench/am-kernels/kernels/typing-game/build/riscv32e-nemu/game.o: \
- /root/ysyx-workbench/am-kernels/kernels/typing-game/game.c \
- /root/ysyx-workbench/abstract-machine/am/include/am.h \
- /root/ysyx-workbench/abstract-machine/am/include/arch/riscv.h \
- /root/ysyx-workbench/abstract-machine/am/include/amdev.h \
- /root/ysyx-workbench/abstract-machine/klib/include/klib.h \
- /root/ysyx-workbench/abstract-machine/klib/include/klib-macros.h
